@@ -41,6 +41,14 @@
         isValid = false;
         }   
     });
+
+    // Sports Checkbox
+    const sport = document.getElementById('sport').checked;
+    if (!sport) {
+        showError('sport', 'You must agree to the favorite sports.');
+        isValid = false;
+        }
+    
     
 // Errors
     function showError(fieldId, message) {
