@@ -9,8 +9,8 @@
 
 // Confirm username
     const username = document.getElementById('username').value;
-    if (username.length < 3) {
-        showError('username', 'Username must be at least 3 characters long.');
+    if (username.length < 5) {
+        showError('username', 'Username must be at least 5 characters long.');
         isValid = false;
         }
     
@@ -42,14 +42,6 @@
         }   
     });
 
-    // Sports Checkbox
-    const sport = document.getElementById('sport').checked;
-    if (!sport) {
-        showError('sport', 'You must agree to the favorite sports.');
-        isValid = false;
-        }
-    
-    
 // Errors
     function showError(fieldId, message) {
     const field = document.getElementById(fieldId);
