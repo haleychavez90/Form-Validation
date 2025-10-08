@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Registration-->
+    <form id="registrationForm">
+    <h2>Registration Form</h2>
+    
+    <label for="username="5">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <!-- Container -->
+    <div id="errorMessages" style="color: red;"></div>
+
+    <!--Select Sport-->   
+    <label>Select your favorite sport:</label>
+    <div class="checkbox-container">
+        <input type="checkbox" id="football" name="sport" value="football">
+        <label for="football">Football</label>
+        <input type="checkbox" id="basketball" name="sport" value="basketball">
+        <label for="basketball">Basketball</label>
+    <input type="checkbox" id="baseball" name="sport" value="baseball">
+    <label for="baseball">Baseball</label>
+    </div>
+        
+
+    <!-- Checkbox-->
+    <div class="checkbox-container">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions.</label>
+    </div>
+
+    <!--Submit-->
+    <button type="submit">Submit</button>
+    </form>
+
+   <script src="main.js"></script> 
+</body>
+</html>
